@@ -1,0 +1,31 @@
+{% extends 'appcoder/base.html' %}
+
+{% block main_content %}
+
+<div class="container mt-5">
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Pais</th>
+                <th>Codigo Postal</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for ciudad in ciudades %}
+                <tr>
+                <td>{{ciudad.nombre}}</td>
+                <td>{{ciudad.apellido}}</td>
+                <td>{{ciudad.email}}</td>
+                <td>{{ciudad.profesion}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+
+    </table>
+</div>
+
+{% endblock main_content %}

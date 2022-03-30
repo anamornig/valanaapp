@@ -1,0 +1,29 @@
+{% extends 'appcoder/base.html' %}
+
+{% block main_content %}
+
+<div class="container mt-5">
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Continente</th>
+                <th>Capital</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for pais in paises %}
+                <tr>
+                <td>{{pais.nombre}}</td>
+                <td>{{pais.apellido}}</td>
+                <td>{{pais.email}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+
+    </table>
+</div>
+{% endblock main_content %}
